@@ -27,16 +27,16 @@ public class APKEditor {
         return ARSCLib.getName() + "-" + ARSCLib.getVersion();
     }
     public static String getDescription(){
-        return getProperties().getProperty("app.description", "---");
+        return getProperties().getProperty("app.description", "");
     }
     public static String getRepo(){
-        return getProperties().getProperty("app.repo", "https://github.com/REAndroid");
+        return getProperties().getProperty("app.repo", "");
     }
     public static String getName(){
-        return getProperties().getProperty("app.name", "---");
+        return getProperties().getProperty("app.name", "");
     }
     public static String getVersion(){
-        return getProperties().getProperty("app.version", "---");
+        return getProperties().getProperty("app.version", "");
     }
     private static Properties getProperties(){
         if(sProperties!=null){
